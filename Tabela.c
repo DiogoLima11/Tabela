@@ -5,7 +5,10 @@
 #include <locale.h>
 #include <ctype.h>
 
+<<<<<<< HEAD
 //Structs usadas para determinar as regioes e ajustar os ponteiros.
+=======
+>>>>>>> 88b289f0cf59b8b65fed448a422730f67174a9c0
 struct regiao
 {
     struct regiao *ant;
