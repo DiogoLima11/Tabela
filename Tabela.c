@@ -5,10 +5,7 @@
 #include <locale.h>
 #include <ctype.h>
 
-<<<<<<< HEAD
-//Structs usadas para determinar as regioes e ajustar os ponteiros.
-=======
->>>>>>> 88b289f0cf59b8b65fed448a422730f67174a9c0
+//Structs usadas para determinar as regiões e ajustar os ponteiros.
 struct regiao
 {
     struct regiao *ant;
@@ -17,7 +14,7 @@ struct regiao
     char regiao[13];
 };
 
-//Strucuts usadas para determinar os times e ajustar os ponteiros.
+//Structs usadas para determinar os times e ajustar os ponteiros.
 struct times
 {
     struct times *prox;
@@ -37,7 +34,7 @@ void mostra(lista *q, char regiao[13]);
 int insere2(lista *q, char times[25], int titulos, char regiao[13]);
 
 
-//No main temos as declarações de variaveis(int e char), os insere(para colocar as regioes e times)
+//No main temos as declarações de variáveis(int e char), os insere(para colocar as regiões e times)
 //e o for para transformar a letra MAIÚSCULA EM MINÚSCULA.
 int main(void)
 {
@@ -83,7 +80,7 @@ int main(void)
    }while(strcmp("SAIR",nome)!=0);
 }
 
-//Função que insere um nó na lista
+//Função que insere um nó na lista.
 int  insere(lista *q, char regiao[13])
 {
     struct regiao *aux;
@@ -110,7 +107,7 @@ int  insere(lista *q, char regiao[13])
         return 1;
 }
 
-//Função que mostra o nó das regiões na lista
+//Função que mostra o nó das regiões na lista.
 void mostra(lista *q, char regiao[13])
 {
     int achou = 0;
@@ -143,7 +140,7 @@ void mostra(lista *q, char regiao[13])
     }
 }
 
-//Função que insere um nó dos times na lista
+//Função que insere um nó dos times na lista.
 int insere2(lista *q, char times[25], int titulos, char regiao[13])
 {
     struct regiao *auxRegiao;
@@ -169,5 +166,3 @@ int insere2(lista *q, char times[25], int titulos, char regiao[13])
         strcpy(auxTimes->times,times);
         auxTimes->titulos = titulos;
 }
-
-//diogo
