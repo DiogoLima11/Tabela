@@ -4,8 +4,6 @@
 #include <locale.h>
 #include <ctype.h>
 
-//DAVI
-
 struct regiao
 {
     struct regiao *ant;
