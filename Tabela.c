@@ -4,6 +4,8 @@
 #include <locale.h>
 #include <ctype.h>
 
+//OI DIOGO
+
 struct regiao
 {
     struct regiao *ant;
