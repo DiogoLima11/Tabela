@@ -166,3 +166,5 @@ int insere2(lista *q, char times[25], int titulos, char regiao[13])
         strcpy(auxTimes->times,times);
         auxTimes->titulos = titulos;
 }
+
+//diogo
